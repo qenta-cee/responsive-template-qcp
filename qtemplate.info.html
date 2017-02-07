@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="./styles/merchant.css"/>
+    <!--QENTA-QHEAD-BEGIN-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wirecard Checkout Page INFO page</title>
+    <link rel="stylesheet" href="./styles/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="./styles/bootstrap-theme.min.css" type="text/css">
+    <link rel="stylesheet" href="./styles/qstyles.css" type="text/css">
+    <!--QENTA-QHEAD-END-->
+</head>
+<body>
+<!--QENTA-QSCRIPTWARNING-BEGIN-->
+<noscript>
+    <div class="container">
+        <div class="alert alert-danger" role="alert">
+            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+            For full support of this feature JavaScript has to be activated
+        </div>
+    </div>
+</noscript>
+<!--QENTA-QSCRIPTWARNING-END-->
+<div id="main" class="container padding-0">
+    <div class="col-md-offset-2 col-md-8 padding-0">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div id="page-info" class="col-md-4">
+                    <div id="merchant-logo">
+                        <!-- Logo place -->
+                        <!--QENTA-QMERCHANTIMAGE200X100-BEGIN-->
+                        <a href="#"><img src="./img/dummyMerchantLogo.gif" alt="Merchant Logo"/></a>
+                        <!--QENTA-QMERCHANTIMAGE200X100-END-->
+                        <!-- /Logo place -->
+                    </div>
+                    <!--QENTA-QORDERINFO-BEGIN-->
+                    <p id="description">
+                        <strong>
+                            Amount: 19,99 EUR
+                        </strong>
+                        <br>
+                        Date: 1970-01-01
+                    </p>
+                    <p>Thank you for ordering at DEMO-Testshop!</p>
+                    <!--QENTA-QORDERINFO-END-->
+                    <ul id="site-certs" class="list-inline hidden-xs hidden-sm text-center">
+                        <li id="site-seal">
+                            <!--QENTA-QCERTIFICATE-BEGIN-->
+                            <img src="./img/dummyCertificate.gif" alt="Wirecard SSL Secured">
+                            <!--QENTA-QCERTIFICATE-END-->
+                        </li>
+                        <li id="wirecard-logo">
+                            <!--QENTA-QENTAINFO-BEGIN-->
+                            <img src="./img/logo_qenta.png" alt="Wirecard Logo">
+                            <!--QENTA-QENTAINFO-END-->
+                        </li>
+                    </ul>
+                </div>
+                <div id="page-content" class="page-content col-md-8">
+                    <!--QENTA-QERRORTEXT-BEGIN-->
+                    <div class="alert alert-danger" role="alert">
+                        <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                        This is an error text.
+                    </div>
+                    <!--QENTA-QERRORTEXT-END-->
+                    <!--QENTA-QCHECKOUTEXPRESS-BEGIN-->
+                    <!--QENTA-QCHECKOUTEXPRESS-END-->
+                    <!--QENTA-QORDIVIDER-BEGIN-->
+                    <!--QENTA-QORDIVIDER-END-->
+                    <!--QENTA-QINPUTHEAD-BEGIN-->
+                    <h2>Select your means of payment</h2>
+                    <form class="form-horizontal">
+                        <!--QENTA-QINPUTHEAD-END-->
+                        <!--QENTA-QINPUT-BEGIN-->
+                        <ul class="list-inline" id="payment-selection">
+                            <li class="payment-method">
+                                <img src="img/payment_method_dummy.png" alt="payment method"/>
+                                <span>Payment method</span>
+                            </li>
+                            <li class="payment-method" onclick="
+                                <!-- This javascript call is only for demo purposes and gets replaced in the real implementation -->
+                                document.getElementById('modal-selectedAccount').style = 'display: block;';
+                                document.getElementById('backdrop').style='display: block;';">
+                                <img src="img/payment_method_dummy.png" alt="Payment method with modal bank selection"/>
+                                <span>Payment method with modal bank selection</span>
+                            </li>
+                            <div class="modal fade in modal-show" id="modal-selectedAccount" tabindex="-1" role="dialog" aria-labelledby="modal-selectedAccount">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="
+                                                    <!-- This javascript call is only for demo purposes and gets replaced in the real implementation -->
+                                                    document.getElementById('modal-selectedAccount').style='display: none;';
+                                                    document.getElementById('backdrop').style='display: none;';">
+                                                <span aria-hidden="true">&times;</span></button>
+                                            <h4 class="modal-title">Please select your bank...</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="list-group">
+                                                <button type="button" class="list-group-item">Bank</button>
+                                                <button type="button" class="list-group-item">Bank</button>
+                                                <button type="button" class="list-group-item">Bank</button>
+                                                <button type="button" class="list-group-item">Bank</button>
+                                                <button type="button" class="list-group-item">Bank</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-backdrop fade in" id="backdrop" style="display: none;"></div>
+                            <li class="payment-method">
+                                <img src="img/payment_method_dummy.png" alt="payment method"/>
+                                <span>Payment method</span>
+                            </li>
+                            <li class="payment-method">
+                                <img src="img/payment_method_dummy.png" alt="payment method"/>
+                                <span>Payment method</span>
+                            </li>
+                        </ul>
+                        <hr>
+                        <h3>Choose a credit card from your digital wallet:</h3>
+                        <ul class="list-inline">
+                            <li><a href="#"><img src="./img/payment_method_dummy.png" alt="Wallet"></a></li>
+                        </ul>
+                        <div class="or-divider">
+                            <span>or</span>
+                        </div>
+                        <fieldset>
+                            <legend class="page-header">
+                                <h3>Please enter the following data:</h3>
+                            </legend>
+
+                            <div class="form-group">
+                                <label for="text-input" class="col-sm-4 control-label">text input:</label>
+                                <div class="col-sm-8">
+                                    <input class="form-control" type="text" name="text-input" id="text-input" maxlength="80">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="date-input-month" class="col-sm-4 control-label">date input:</label>
+                                <div class="col-sm-8">
+                                    <div class="row">
+                                        <div class="col-xs-4">
+                                            <select name="date-input-month" id="date-input-month" class="form-control">
+                                                <option value="00"></option>
+                                                <option value="01">01</option>
+                                                <option value="02">02</option>
+                                                <option value="03">03</option>
+                                                <option value="04">04</option>
+                                                <option value="05">05</option>
+                                                <option value="06">06</option>
+                                                <option value="07">07</option>
+                                                <option value="08">08</option>
+                                                <option value="09">09</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                                <option value="12">12</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-xs-5">
+                                            <span class="sr-only"><label for="date-input-year">Year:</label></span>
+                                            <select name="date-input-year" id="date-input-year" class="form-control">
+                                                <option value="0000"></option>
+                                                <option value="2017">2017</option>
+                                                <option value="2018">2018</option>
+                                                <option value="2019">2019</option>
+                                                <option value="2020">2020</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="cvc" class="col-sm-4 control-label">card security code:</label>
+                                <div class="col-sm-3">
+                                    <div class="input-group">
+                                        <input class="form-control" type="text" name="cvc" id="cvc" maxlength="4" value="" onkeypress="return wcp_filterKeyboardStrokes(event, 13, 'wcp_next();', 'num');">
+                                        <span class="input-group-btn">
+                                            <a href="#" class="btn btn-info">
+                                                <span class="glyphicon glyphicon-info-sign" aria-hidden="true">
+                                                    <span class="sr-only">info</span>
+                                                </span>
+                                            </a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <!--QENTA-QINPUT-END-->
+                        <!--QENTA-QINPUTFOOT-BEGIN-->
+                    </form>
+                    <!--QENTA-QINPUTFOOT-END-->
+                </div>
+            </div>
+            <div id="navigation" class="panel-footer">
+                <!--QENTA-QCSSBUTTONS-BEGIN-->
+                <a href="#cancel" class="btn btn-link" id="button-cancel" role="button">Cancel</a>
+                <div class="pull-right">
+                    <a href="#back" class="btn btn-default" id="button-back" role="button"><span
+                            class="glyphicon glyphicon-chevron-left"
+                            aria-hidden="true"></span> Back</a>
+                    <a href="#next" class="btn btn-primary" id="button-next" role="button">Next <span
+                            class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+                </div>
+                <!--QENTA-QCSSBUTTONS-END-->
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

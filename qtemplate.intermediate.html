@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="./styles/merchant.css" />
+    <!--QENTA-QHEAD-BEGIN-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wirecard Checkout Page</title>
+    <link rel="stylesheet" href="./styles/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="./styles/bootstrap-theme.min.css" type="text/css">
+    <link rel="stylesheet" href="./styles/qstyles.css" type="text/css">
+    <!--QENTA-QHEAD-END-->
+</head>
+<body>
+<!--QENTA-QSCRIPTWARNING-BEGIN-->
+<noscript>
+    <div class="container">
+        <div class="alert alert-danger" role="alert">
+            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+            For full support of this feature JavaScript has to be activated
+        </div>
+    </div>
+</noscript>
+<!--QENTA-QSCRIPTWARNING-END-->
+<div id="main" class="container padding-0">
+    <div class="col-md-offset-2 col-md-8 padding-0">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div id="page-info" class="col-md-4">
+                    <div id="merchant-logo">
+                        <!-- Logo place -->
+                        <!--QENTA-QMERCHANTIMAGE200X100-BEGIN-->
+                        <a href="#"><img src="./img/dummyMerchantLogo.gif" alt="Merchant Logo"/></a>
+                        <!--QENTA-QMERCHANTIMAGE200X100-END-->
+                        <!-- /Logo place -->
+                    </div>
+                    <!--QENTA-QORDERINFO-BEGIN-->
+                    <p id="description">
+                        <strong>
+                            Amount: 19,99 EUR
+                        </strong>
+                        <br>
+                        Date: 1970-01-01
+                    </p>
+                    <p>Thank you for ordering at DEMO-Testshop!</p>
+                    <!--QENTA-QORDERINFO-END-->
+                    <ul id="site-certs" class="list-inline hidden-xs hidden-sm text-center">
+                        <li id="site-seal">
+                            <!--QENTA-QCERTIFICATE-BEGIN-->
+                            <img src="./img/dummyCertificate.gif" alt="Wirecard SSL Secured">
+                            <!--QENTA-QCERTIFICATE-END-->
+                        </li>
+                        <li id="wirecard-logo">
+                            <!--QENTA-QENTAINFO-BEGIN-->
+                            <img src="./img/logo_qenta.png" alt="Wirecard Logo">
+                            <!--QENTA-QENTAINFO-END-->
+                        </li>
+                    </ul>
+                </div>
+                <div id="page-content" class="page-content col-md-8">
+                    <!--QENTA-QINFOTEXT-BEGIN-->
+                    <div class="alert alert-info" role="alert">
+                        <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                        The transaction has been started.
+                    </div>
+                    <!--QENTA-QINFOTEXT-END-->
+                    <!--QENTA-QERRORTEXT-BEGIN-->
+                    <div class="alert alert-danger" role="alert">
+                        <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                        Do not close this window!
+                    </div>
+                    <!--QENTA-QERRORTEXT-END-->
+                    <div id="loader">
+                        <div class="sk-fading-circle">
+                            <div class="sk-circle1 sk-circle"></div>
+                            <div class="sk-circle2 sk-circle"></div>
+                            <div class="sk-circle3 sk-circle"></div>
+                            <div class="sk-circle4 sk-circle"></div>
+                            <div class="sk-circle5 sk-circle"></div>
+                            <div class="sk-circle6 sk-circle"></div>
+                            <div class="sk-circle7 sk-circle"></div>
+                            <div class="sk-circle8 sk-circle"></div>
+                            <div class="sk-circle9 sk-circle"></div>
+                            <div class="sk-circle10 sk-circle"></div>
+                            <div class="sk-circle11 sk-circle"></div>
+                            <div class="sk-circle12 sk-circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
