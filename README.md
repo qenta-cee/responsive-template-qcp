@@ -1,4 +1,4 @@
-# Responsive layout customization for Wirecard Checkout Page
+# Responsive layout for Wirecard Checkout Page
 
 This template is for integrators who want to customize the RESPONSIVE layout of Wirecard Checkout Page.
 A detailed guide on how you can change the look and feel of your Checkout Page can be found [here](https://guides.wirecard.com/wcp:customization_desktop#editing_the_templates)
