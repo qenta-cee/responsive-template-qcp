@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./styles/bootstrap-theme.min.css" type="text/css">
     <link rel="stylesheet" href="./styles/qstyles.css" type="text/css">
     <!--QENTA-QHEAD-END-->
-    <link rel="stylesheet" type="text/css" href="./styles/merchant.css"/>
+    <link rel="stylesheet" href="./styles/merchant.css" type="text/css">
 </head>
 <body>
 <!--QENTA-QSCRIPTWARNING-BEGIN-->
@@ -44,7 +44,7 @@
                         <br>
                         Date: 1970-01-01
                     </p>
-                    <p>Thank you for ordering at DEMO-Testshop!</p>
+                    <p id="display-text">Thank you for ordering at DEMO-Testshop!</p>
                     <!--QENTA-QORDERINFO-END-->
                     <ul id="site-certs" class="list-inline hidden-xs hidden-sm text-center">
                         <li id="site-seal">
@@ -63,6 +63,7 @@
                     <!--QENTA-QERRORTEXT-BEGIN-->
                     <div class="alert alert-danger" role="alert">
                         <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                        <span class="sr-only">Error:</span>
                         This is an error text.
                     </div>
                     <!--QENTA-QERRORTEXT-END-->
@@ -87,7 +88,7 @@
                                 <img src="img/payment_method_dummy.png" alt="Payment method with modal bank selection"/>
                                 <span>Payment method with modal bank selection</span>
                             </li>
-                            <div class="modal fade in" id="modal-selectedAccount" tabindex="-1" role="dialog" aria-labelledby="modal-selectedAccount">
+                            <div class="modal fade in modal-show" id="modal-selectedAccount" tabindex="-1" role="dialog" aria-labelledby="modal-selectedAccount">
                                 <div class="modal-dialog" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
