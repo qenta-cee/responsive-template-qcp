@@ -56,9 +56,21 @@
     width: 145px;
 }
 
+.panel-body {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    min-height: 400px;
+}
+
 @media (max-width: 767px) {
     #payment-selection {
         text-align: center;
+    }
+
+    .panel-body {
+        display: block;
     }
 }
 
@@ -242,12 +254,4 @@
 
 #site-certs > li {
     margin-top: 8px;
-}
-
-.panel-body {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    overflow: hidden;
-    min-height: 400px;
 }
