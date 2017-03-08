@@ -68,10 +68,6 @@
     #payment-selection {
         text-align: center;
     }
-
-    .panel-body {
-        display: block;
-    }
 }
 
 @media (max-width: 991px) {
@@ -82,6 +78,10 @@
     #merchant-logo {
         height: auto;
         width: auto;
+    }
+
+    .panel-body {
+        display: block;
     }
 }
 
