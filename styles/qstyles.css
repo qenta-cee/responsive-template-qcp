@@ -44,6 +44,12 @@
     width: 115px;
 }
 
+.selected_brandimage img {
+    max-width: 350px;
+    min-width: 250px;
+    width: 100%;
+}
+
 .payment-method span {
     float: left;
     font-size: 12px;
@@ -229,6 +235,19 @@
     40% { opacity: 1; }
 }
 
-#display-text {
-    text-align: justify;
+#site-certs {
+    position: absolute;
+    bottom: 0;
+}
+
+#site-certs > li {
+    margin-top: 8px;
+}
+
+.panel-body {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    min-height: 400px;
 }
